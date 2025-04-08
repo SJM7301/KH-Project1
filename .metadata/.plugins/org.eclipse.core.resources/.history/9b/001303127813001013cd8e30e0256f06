@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*, java.sql.*, dto.Movie, dao.MovieRepository"%>
+<%@ page import="com.oreilly.servlet.*, com.oreilly.servlet.multipart.*" %>
+<%@ include file="dbconn.jsp" %>
+
+<%
+    request.setCharacterEncoding("UTF-8");
+
+    // 폼에서 값 가져오기
+    String number = request.getParameter("n_num");
+    String content = request.getParameter("n_content");
+    String revision = request.getParameter("n_revision");
+
+    PreparedStatement pstmt = null;
+
+    // n_id는 AUTO_INCREMENT이므로 제외
+    String sql = "INSERT INTO notice (n_num, n_content, n_revision) VALUES (?, ?, ?)";
+
+    pstmt = conn.prepareStatement(sql);
+    pstmt.setString(1, number);   // n_num
+    pstmt.setString(2, content);  // n_content
+    pstmt.setString(3, revision); // n_revision
+
+    int num = pstmt.executeUpdate();
+    if (num == 1) {
+        out.println("정상 입력되었습니다.");
+    } else {
+        out.println("입력이 실패하였습니다.");
+    }
+
+    // 자원 해제
+    if (pstmt != null) pstmt.close();
+    if (conn != null) conn.close();
+
+    // main.jsp로 리다이렉트
+    response.sendRedirect("main.jsp");
+%>

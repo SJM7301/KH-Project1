@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\eclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1368955877.index
+\movie_review\src\main\java
+C:\eclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3154910914.index
+\movie_review\src\main\java

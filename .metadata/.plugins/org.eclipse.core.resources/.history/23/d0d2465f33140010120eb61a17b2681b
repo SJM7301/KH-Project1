@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="java.util.*,java.sql.*, dto.Movie, dao.MovieRepository"%>
+<%@ page import="com.oreilly.servlet.*, com.oreilly.servlet.multipart.*" %>
+<%@ include file="dbconn.jsp" %>
+
+<%
+	request.setCharacterEncoding("UTF-8");
+
+	int maxSize = 10 * 1024 * 1024; // 최대 업로드될 파일의 크기 10MB
+	String encType = "UTF-8"; //인코딩 유형
+	
+	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
+
+	
+	String id = multi.getParameter("n_id");
+	String number = multi.getParameter("n_num");
+	String content = multi.getParameter("n_content");
+	String revision = multi.getParameter("n_revision");
+	
+	PreparedStatement pstmt = null;
+	
+	String sql = "INSERT INTO notice VALUES(?,?,?,?)";
+	
+	pstmt = conn.prepareStatement(sql);
+	pstmt.setString(1, id);
+	pstmt.setString(2, number);
+	pstmt.setString(3, content);
+	pstmt.setString(4, revision);
+	
+	int num = pstmt.executeUpdate();
+	if(num == 1){
+		out.println("정상 입력되었습니다.");
+	}else
+		out.println("입력이 실패하였습니다.");
+	
+	if(pstmt != null)
+		pstmt.close();
+	if(conn != null)
+		conn.close();
+	
+	response.sendRedirect("main.jsp");
+%>

@@ -1,0 +1,11 @@
+CREATE TABLE notice (
+	n_id INT AUTO_INCREMENT,
+	n_num VARCHAR(10),
+	n_content TEXT,
+	n_revision VARCHAR(10),
+	primary key(n_id)
+) default CHARSET = utf8;
+
+select * from notice;
+
+DROP TABLE notice;

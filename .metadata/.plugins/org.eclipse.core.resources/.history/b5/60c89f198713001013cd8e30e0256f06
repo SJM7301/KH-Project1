@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="java.util.*,java.sql.*, dto.Movie, dao.MovieRepository"%>
+<%@ page import="com.oreilly.servlet.*, com.oreilly.servlet.multipart.*" %>
+<%@ include file="dbconn.jsp" %>
+
+<%
+	request.setCharacterEncoding("UTF-8");
+
+	String filename = "";
+	String realFolder = "C:\\eclipse\\web_project\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\Movie_review\\resources\\images";
+	int maxSize = 10 * 1024 * 1024; // 최대 업로드될 파일의 크기 10MB
+	String encType = "UTF-8"; //인코딩 유형
+	
+	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
+	
+	String id = multi.getParameter("n_id");
+	String number = multi.getParameter("n_num");
+	String content = multi.getParameter("n_content");
+	String revision = multi.getParameter("n_revision");
+	
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	String sql = "SELECT * FROM notice WHERE n_id=?";
+	pstmt = conn.prepareStatement(sql);
+	pstmt.setString(1, id);
+	rs = pstmt.executeQuery();
+	
+	String sql = "UPDATE notice SET n_num=?, n_content=?, n_revision=? WHERE n_id=?";
+	pstmt = conn.prepareStatement(sql);
+	pstmt.setString(1, number);
+	pstmt.setString(2, content);
+	pstmt.setString(3, revision);
+	pstmt.setString(4, id);
+	pstmt.executeUpdate();
+	
+	if (pstmt != null)
+		pstmt.close();
+	if (conn != null)
+		conn.close();
+	
+	response.sendRedirect("editNotice.jsp");
+%>

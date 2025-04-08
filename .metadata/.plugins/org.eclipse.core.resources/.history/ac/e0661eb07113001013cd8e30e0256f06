@@ -1,0 +1,10 @@
+CREATE TABLE notice (
+	n_id VARCHAR(20) NOT NULL,
+	n_num VARCHAR(10) NOT NULL,
+	n_content TEXT,
+	n_revision VARCHAR(10)
+) default CHARSET = utf8;
+
+select * from notice;
+
+DROP TABLE notice;
