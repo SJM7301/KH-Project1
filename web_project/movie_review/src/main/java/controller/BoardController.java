@@ -41,7 +41,7 @@ public class BoardController extends HttpServlet {
 			requestBoardView(request);
 			RequestDispatcher rd = request.getRequestDispatcher("/BoardView.do");
 			rd.forward(request, response);
-		} else if (command.equals("/BoardView.do")) { // 글 상세 페이지 출
+		} else if (command.equals("/BoardView.do")) { // 글 상세 페이지 출력
 			RequestDispatcher rd = request.getRequestDispatcher("./board/view.jsp");
 			rd.forward(request, response);
 		} else if (command.equals("/BoardUpdateAction.do")) { // 선택된 글 수정하기
