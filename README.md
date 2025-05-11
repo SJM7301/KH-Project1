@@ -105,3 +105,4 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 
 ### QnA 작성
 ![Image](https://github.com/user-attachments/assets/3aa02856-1f3d-44a6-9850-c133bc243ff6)
+![Image](https://github.com/user-attachments/assets/dcc979ea-271a-48be-8d72-5885156ae710)
