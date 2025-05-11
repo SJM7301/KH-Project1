@@ -85,23 +85,31 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 비회원 및 회원 / 관리자(admin)
 ![Image](https://github.com/user-attachments/assets/34c64fb1-3019-49ef-83a1-17be37cb9445)
 
-비회원 및 회원은 nav바에서 액션, SF, 코미디, 로맨스, 기타 영화와 Q&A로 이동할 수 있고, 관리자는 영화 리뷰 및 공지사항 등록, 수정, 삭제가 가능하다.
+1. 비회원 및 회원은 nav바에서 액션, SF, 코미디, 로맨스, 기타 영화와 Q&A로 이동할 수 있다.
+2. 관리자는 영화 리뷰 및 공지사항 등록, 수정, 삭제가 가능하다.
 
 ### 로그인
 ![Image](https://github.com/user-attachments/assets/38f1bcb9-5b62-4e2a-8c32-8d4b377763e7)
 
+1. 로그인 성공 유무
+2. 아이디 및 비밀번호 찾기와 회원가입 페이지로 이동할 수 있다.
 ### 회원가입
 ![Image](https://github.com/user-attachments/assets/cbea3a6f-fc35-4605-96cc-f0e25aae5baa)
 
+1. 회원가입 성공 유무
 ### 아이디 및 비밀번호 찾기
 ![Image](https://github.com/user-attachments/assets/7e38b418-0f6e-436f-83ee-d7fe55d4fec9)
 
+1. 작성란에 작성한 내용과 DataBase안에 저장된 내용이 동일하면 아이디 및 비밀번호를 알려준다.
 ### 댓글 작성 
 ![Image](https://github.com/user-attachments/assets/78ecf864-2a2c-478c-83a1-b8a3dbc78a8e)
-
+1. 본인이 작성한 댓글만 삭제할 수 있다.
 ### QnA 작성
 ![Image](https://github.com/user-attachments/assets/dcc979ea-271a-48be-8d72-5885156ae710)
-
+1. QnA 페이지 우측 하단에 있는 글쓰기 버튼을 통해 QnA 작성 페이지로 이동할 수 있다.
+2. 제목과 내용을 작성 후 등록 버튼을 클릭 시 QnA가 등록된다.
+3. QnA 페이지에서 제목을 클릭하면 상세 내용을 볼 수 있고, QnA 작성자만 수정 및 삭제할 수 있다.
+4. 회원은 QnA 답변을 할 수 없다.
 ### 관리자(admin) 기능
 영화리뷰 및 공지사항 추가, 수정, 삭제 / 회원 댓글 및 QnA 관리, QnA 답변
 
@@ -109,5 +117,10 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 ![Image](https://github.com/user-attachments/assets/6ee5565b-ac22-4713-a2af-39fed8fdb55e)
 ![Image](https://github.com/user-attachments/assets/6a9daa44-d4f2-4903-b936-1484579edddc)
 
+1. 영화리뷰 및 공지사항 추가, 수정, 삭제는 관리자만 할 수 있다.
+2. 영화리뷰 코드는 중복될 수 없으며, 공지사항 번호는 중복될 수 있다.
 ### 회원 댓글 및 QnA 관리, QnA 답변
 ![Image](https://github.com/user-attachments/assets/52dbb524-5962-462d-939c-f13bffbbcf20)
+1. 관리자는 모든 댓글을 삭제할 수 있다.
+2. QnA는 수정할 수 없지만 삭제할 수 있다.
+3. QnA 댓글을 작성할 수 있고, 삭제할 수 있다.
