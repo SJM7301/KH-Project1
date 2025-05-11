@@ -85,4 +85,5 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 
 ## 메인화면
 비회원 및 회원 / 관리자(admin)
-![Image](https://github.com/user-attachments/assets/0e189347-701a-47a9-aa5e-f5ad0639794e)
+![Image](https://github.com/user-attachments/assets/e1a653b3-7eaa-4a9b-812b-cebe462a645f)
+![Image](https://github.com/user-attachments/assets/34c64fb1-3019-49ef-83a1-17be37cb9445)
