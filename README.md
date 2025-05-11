@@ -17,7 +17,7 @@
 ### 2. 주요기능
 ![Image](https://github.com/user-attachments/assets/ba080e8d-f215-48cd-a933-9455fc004618)
 ### 3. 시스템 구축
-![Image](https://github.com/user-attachments/assets/1960558c-6c08-41ff-8bb5-85d00a080e04)
+![Image](https://github.com/user-attachments/assets/2aff71e2-6324-490a-8a9e-ee4a557335a9)
 ### 4. 흐름도
 ![Image](https://github.com/user-attachments/assets/23de84e6-a35f-4aa8-9578-036ccb170d52)
 
@@ -41,7 +41,6 @@ dto: controller와 dao 간 데이터 전달을 위한 객체
 
 filter: 로그를 파일에 저장
 
-
 board: QnA페이지 및 QnA등록 수정 삭제, 상세 페이지
 
 logs: filter에서 저장된 로그
@@ -54,17 +53,28 @@ images: 영화 포스터 이미지
 
 sql: 이용자, 영화리뷰, 댓글, QnA, 공지사항 관련 DB
 
-
 add~.jsp: 영화, 회원, 댓글, 공지사항 등록
+
 ~Movie.jsp: 액션, SF, 코미디, 로맨스, 기타 영화 페이지
+
 dbconn.jsp: DB연결 처리
+
 delete~.jsp: 댓글, 영화, 회원, 공지사항 삭제
+
 detail.jsp: 영화리뷰 상세 화면
+
 edit~.jsp: 영화리뷰, 공지사항 수정 및 삭제 기능
+
 exceptionNo~.jsp: 오류 페이지 출력
+
 processAdd~.jsp: 회원정보, 영화리뷰 데이터, 공지사항 정보 등 DB에 저장
+
 processFind~.jsp: Id 및 pw를 DB에서 조회
+
 processUpdate~.jsp: 회원정보, 영화리뷰 데이터 등 수정 후 DB에 저장
+
 resultMember.jsp: 회원 상태에 따른 메시지 출력
+
 update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이지
 
+##
