@@ -23,5 +23,36 @@
 
 ## 프로젝트 선정 베경
 ● 블로그를 만들어 보고 싶었다.
+
 ● 기간안에 만들 수 있는 웹 페이지를 만들어야 한다.
+
 ● 데이터가 많으면 좋다.
+
+## 시스템 구축
+![Image](https://github.com/user-attachments/assets/9cbe67bb-8f24-40dc-8d38-ec5dfdcd0622)
+
+common: DB연결 처리
+controller: QnA의 CRUD 처리를 담당
+dao: DB와 애플리케이션 간의 데이터 상호작용을 처리
+dto: controller와 dao 간 데이터 전달을 위한 객체
+filter: 로그를 파일에 저장
+
+board: QnA페이지 및 QnA등록 수정 삭제, 상세 페이지
+logs: filter에서 저장된 로그
+META-INF: JAR파일 관련 설정
+css: 외부 라이브러리 스타일 시트 및 이미지 슬라이드 스타일 시트
+images: 영화 포스터 이미지
+sql: 이용자, 영화리뷰, 댓글, QnA, 공지사항 관련 DB
+
+add~.jsp: 영화, 회원, 댓글, 공지사항 등록
+~Movie.jsp: 액션, SF, 코미디, 로맨스, 기타 영화 페이지
+dbconn.jsp: DB연결 처리
+delete~.jsp: 댓글, 영화, 회원, 공지사항 삭제
+detail.jsp: 영화리뷰 상세 화면
+edit~.jsp: 영화리뷰, 공지사항 수정 및 삭제 기능
+exceptionNo~.jsp: 오류 페이지 출력
+processAdd~.jsp: 회원정보, 영화리뷰 데이터, 공지사항 정보 등 DB에 저장
+processFind~.jsp: Id 및 pw를 DB에서 조회
+processUpdate~.jsp: 회원정보, 영화리뷰 데이터 등 수정 후 DB에 저장
+resultMember.jsp: 회원 상태에 따른 메시지 출력
+update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이지
