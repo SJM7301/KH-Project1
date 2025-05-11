@@ -82,3 +82,8 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 로그인 / 회원가입 / 리뷰작성 / QnA작성
 ### 관리자(admin) 기능
 영화리뷰 및 공지사항 추가, 수정, 삭제 / 회원 댓글 및 QnA 관리 / QnA 답변
+
+## 메인화면
+비회원 및 회원 / 관리자(admin)
+![Image](https://github.com/user-attachments/assets/0e189347-701a-47a9-aa5e-f5ad0639794e)
+비회원 및 회원 / 관리자(admin)
