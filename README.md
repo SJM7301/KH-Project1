@@ -16,7 +16,7 @@
 
 ### 2. 주요기능
 ![Image](https://github.com/user-attachments/assets/ba080e8d-f215-48cd-a933-9455fc004618)
-### 3. 시스템 구축
+### 3. 개발환경
 ![Image](https://github.com/user-attachments/assets/2aff71e2-6324-490a-8a9e-ee4a557335a9)
 ### 4. 흐름도
 ![Image](https://github.com/user-attachments/assets/23de84e6-a35f-4aa8-9578-036ccb170d52)
