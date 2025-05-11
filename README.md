@@ -20,3 +20,8 @@
 ![Image](https://github.com/user-attachments/assets/1960558c-6c08-41ff-8bb5-85d00a080e04)
 ### 4. 흐름도
 ![Image](https://github.com/user-attachments/assets/23de84e6-a35f-4aa8-9578-036ccb170d52)
+
+## 프로젝트 선정 베경
+● 블로그를 만들어 보고 싶었다.
+● 기간안에 만들 수 있는 웹 페이지를 만들어야 한다.
+● 데이터가 많으면 좋다.
