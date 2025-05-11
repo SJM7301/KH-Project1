@@ -97,20 +97,17 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 ![Image](https://github.com/user-attachments/assets/7e38b418-0f6e-436f-83ee-d7fe55d4fec9)
 
 ### 댓글 작성 
-회원 / 관리자
 ![Image](https://github.com/user-attachments/assets/78ecf864-2a2c-478c-83a1-b8a3dbc78a8e)
-![Image](https://github.com/user-attachments/assets/36af3154-5230-4386-984b-2c8d94eea44f)
-
-회원은 본인이 작성한 댓글만 삭제할 수 있고, 관리자는 모든 댓글을 삭제할 수 있다.
 
 ### QnA 작성
 ![Image](https://github.com/user-attachments/assets/dcc979ea-271a-48be-8d72-5885156ae710)
 
 ### 관리자(admin) 기능
-영화리뷰 및 공지사항 추가, 수정, 삭제 / 회원 댓글 및 QnA 관리 / QnA 답변
+영화리뷰 및 공지사항 추가, 수정, 삭제 / 회원 댓글 및 QnA 관리, QnA 답변
 
 ### 영화리뷰 및 공지사항 추가, 수정, 삭제
 ![Image](https://github.com/user-attachments/assets/6ee5565b-ac22-4713-a2af-39fed8fdb55e)
 ![Image](https://github.com/user-attachments/assets/6a9daa44-d4f2-4903-b936-1484579edddc)
 
-### 회원 댓글 및 QnA 관리
+### 회원 댓글 및 QnA 관리, QnA 답변
+![Image](https://github.com/user-attachments/assets/52dbb524-5962-462d-939c-f13bffbbcf20)
