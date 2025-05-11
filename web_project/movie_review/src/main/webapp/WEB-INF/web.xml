@@ -57,7 +57,7 @@
 		
 		<init-param>
 			<param-name>filename</param-name>
-			<param-value>C:\\eclipse\\web_project\\Movie_review\\src\main\\webapp\\logs\\Movie_review.log</param-value>
+			<param-value>D:\\eclipse\\KH-Project1\\web_project\\Movie_review\\src\main\\webapp\\logs\\Movie_review.log</param-value>
 		</init-param>
 	</filter>
 

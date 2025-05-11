@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>영화 리뷰 수정</title>
+<title>영화 리뷰 수정 및 삭제</title>
 <link href="./resources/css/bootstrap.min.css" rel="stylesheet" />
 <link href="./resources/css/style.css" rel="stylesheet" />
 </head>
@@ -48,11 +48,11 @@
 					<p><%=rs.getString("r_description").substring(0, 50) %>..
 					
 					<p>
-	            	<% if(edit.equals("update")){ %> <!-- edit 파라미터가 'update'일 경우 수정 버튼을 보여줌 -->
+	            	<%--<% if(edit.equals("update")){ %> --%> <!-- edit 파라미터가 'update'일 경우 수정 버튼을 보여줌 -->
 	            	<p><a href="./updateMovie.jsp?id=<%=rs.getString("r_id") %>" class="btn btn-success" role = "button"> 수정 &raquo;</a>
-	            	<% } else if(edit.equals("delete")){ %> <!-- edit 파라미터가 'delete'일 경우 삭제 버튼을 보여줌 -->
+	            	<%--<% } else if(edit.equals("delete")){ --%> <!-- edit 파라미터가 'delete'일 경우 삭제 버튼을 보여줌 -->
 	            	<a href="#" onclick="deleteConfirm('<%=rs.getString("r_id") %>')" class="btn btn-danger" role="button">삭제 &raquo;</a>
-	            	<% } %>
+	            	<%--<% } --%>
 				</div>
 			</div>
 		

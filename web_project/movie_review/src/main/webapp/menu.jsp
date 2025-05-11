@@ -44,16 +44,15 @@
 				<c:choose>
 					<c:when test="${sessionId eq 'admin' }">
 						<li class="nav-item"><a href="<c:url value='/addMovie.jsp'/>" class="nav-link">영화 리뷰 등록</a></li>
-						<li class="nav-item"><a href="<c:url value='/editMovie.jsp?edit=update'/>" class="nav-link">영화 리뷰 수정</a></li>
-						<li class="nav-item"><a href="<c:url value='/editMovie.jsp?edit=delete'/>" class="nav-link">영화 리뷰 삭제</a></li>
+						<li class="nav-item"><a href="<c:url value='/editMovie.jsp?edit=update'/>" class="nav-link">영화 리뷰 수정 및 삭제</a></li>
+						<li class="nav-item"><a href="<c:url value='/addNotice.jsp' />" class="nav-link">공지사항 등록</a></li>
+						<li class="nav-item"><a href="<c:url value='/editNotice.jsp' />" class="nav-link">공지사항 수정 및 삭제</a></li>
 						<li class="nav-item"><a href="<c:url value='/actionMovie.jsp'/>" class="nav-link">액션 영화</a></li>
 						<li class="nav-item"><a href="<c:url value='/sfMovie.jsp'/>" class="nav-link">SF 영화</a></li>
 						<li class="nav-item"><a href="<c:url value='/comedyMovie.jsp'/>" class="nav-link">코미디 영화</a></li>
 						<li class="nav-item"><a href="<c:url value='/romanceMovie.jsp'/>" class="nav-link">로맨스 영화</a></li>
 						<li class="nav-item"><a href="<c:url value='/etcMovie.jsp'/>" class="nav-link">기타 영화</a></li>
 						<li class="nav-item"><a href="<c:url value="/BoardListAction.do?pageNum=1" />" class="nav-link">Q&A</a></li>
-						<li class="nav-item"><a href="<c:url value='/notice.jsp' />" class="nav-link">공지사항 등록</a></li>
-						<li class="nav-item"><a href="<c:url value='/editNotice.jsp' />" class="nav-link">공지사항 수정 및 삭제</a></li>
 					</c:when>
 					
 					<c:otherwise>

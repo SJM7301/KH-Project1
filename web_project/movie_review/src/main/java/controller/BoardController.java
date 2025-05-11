@@ -52,11 +52,11 @@ public class BoardController extends HttpServlet {
 			requestBoardDelete(request);
 			RequestDispatcher rd = request.getRequestDispatcher("/BoardListAction.do");
 			rd.forward(request, response);
-		} else if (command.equals("/BoardCommentWriteAction.do")) {
+		} else if (command.equals("/BoardCommentWriteAction.do")) { // 댓글 등록하기
 			requestBoardCommentList(request);
 			RequestDispatcher rd = request.getRequestDispatcher("/BoardListAction.do");
 			rd.forward(request, response);
-		} else if (command.equals("/BoardCommentDeleteAction.do")) {
+		} else if (command.equals("/BoardCommentDeleteAction.do")) { // 댓글 삭제하기
 			requestBoardCommentDelete(request);
 			RequestDispatcher rd = request.getRequestDispatcher("/BoardListAction.do");
 			rd.forward(request, response);

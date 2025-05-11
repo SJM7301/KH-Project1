@@ -80,7 +80,7 @@
 						            if(pstmt1 != null) pstmt1.close();
 						        %>
 						    </div>
-						    <!-- 오른쪽, 왼쪽 버튼 추가 -->
+						    <!-- 오른쪽, 왼쪽 버튼S 추가 -->
 						    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
 						        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						        <span class="visually-hidden">Previous</span>

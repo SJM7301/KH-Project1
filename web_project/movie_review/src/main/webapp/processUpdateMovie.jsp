@@ -8,7 +8,7 @@
 	request.setCharacterEncoding("UTF-8");
 	
 	String filename = "";
-	String realFolder = "C:\\eclipse\\web_project\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\Movie_review\\resources\\images";
+	String realFolder = "D://eclipse//KH-Project1//web_project//.metadata//.plugins//org.eclipse.wst.server.core//tmp0//wtpwebapps//Movie_review//resources//images";
 	int maxSize = 5 * 1024 * 1024; // 최대 업로드될 파일의 크기 5MB
 	String encType = "UTF-8"; //인코딩 유형
 	
