@@ -16,8 +16,34 @@
 
 ### 2. 주요기능
 ![Image](https://github.com/user-attachments/assets/ba080e8d-f215-48cd-a933-9455fc004618)
-### 3. 개발환경
+
+### 3. 사용기술 및 개발환경
 ![Image](https://github.com/user-attachments/assets/2aff71e2-6324-490a-8a9e-ee4a557335a9)
+
+
+<table>
+  <tr>
+    <td>운영체제</td>
+    <td>Windows 10</td>
+  </tr>
+  <tr>
+    <td>사용 언어</td>
+    <td>Java, JavaScript, JSP, HTML, CSS, JS</td>
+  </tr>
+  <tr>
+    <td>FrameWork / Library</td>
+    <td>BootStrap</td>
+  </tr>
+  <tr>
+    <td>DB</td>
+    <td>MySQL</td>
+  </tr>
+  <tr>
+    <td>WAS</td>
+    <td>Apache Tomcat</td>
+  </tr>
+</table>
+
 ### 4. 흐름도
 ![Image](https://github.com/user-attachments/assets/23de84e6-a35f-4aa8-9578-036ccb170d52)
 
@@ -27,6 +53,93 @@
 ● 기간안에 만들 수 있는 웹 페이지를 만들어야 한다.
 
 ● 데이터가 많으면 좋다.
+
+## 구현 기능
+- 헤더
+  - 로고, (로그인, 로그아웃), (회원가입, 회원수정)
+  - (액션, SF, 코미디, 로맨스, 기타)영화, QnA
+  - (영화 리뷰 및 공지사항 등록, 수정, 삭제)
+
+- 로고
+  - 클릭 시 메인 페이지로 이동
+
+- 로그인
+  - ID, Password 입력
+  - DB에 저장된 ID 및 Password가 불일치 시 "아이디와 비밀번호를 확인해 주세요" 출력
+ 
+- 회원가입
+  - 아이디, 비밀번호, 비밀번호 확인, 성명, 이메일 입력 후 회원가입
+  <table>
+    <tr>
+      <td>아이디 미입력 시</td>
+      <td>"아이디를 입력하세요."</td>
+    </tr>
+    <tr>
+      <td>비밀번호 미입력 시</td>
+      <td>"비밀번호를 입력하세요."</td>
+    </tr>
+    <tr>
+      <td>비밀번호와 비밀번호 확인 불일치 시</td>
+      <td>"비밀번호를 동일하게 입력하세요."</td>
+    </tr>
+    <tr>
+      <td>성명 미입력 시</td>
+      <td>"성명을 입력하세요."</td>
+    </tr>
+    <tr>
+      <td>이메일 미입력 시</td>
+      <td>"이메일을 입력하세요."</td>
+    </tr>
+  </table>
+
+- 회원 수정
+  - 아이디 (readonly -> 수정 불가능)
+  - 비밀번호
+  - 비밀번호 확인
+  - 성명 (readonly -> 수정 불가능)
+  - 이메일
+  - 회원수정 | 회원탈퇴
+
+- 메인 페이지
+  - 공지사항
+  - 슬라이드 이미지
+  - 영화 리뷰 목룍
+
+- 영화 리뷰 추가, 수정, 삭제
+  - 영화 코드 (readonly -> 수정 불가능)
+  - 영화 제목
+  - 장르
+  - 평점
+  - 감독
+  - 영화 리뷰
+  - 나라
+  - 개봉일
+  - 상영 플랫폼
+  - 영화 포스터
+
+- 영화 리뷰 상세 페이지
+  - 영화 제목
+  - 장르 | 평점
+  - 감독 | 나라
+  - 개봉일 | 상영 플랫폼
+  - 영화 리뷰
+  - 영화 댓글 목록
+
+ - QnA 게시판
+  - QnA 목록
+  - 글쓰기
+  - QnA 검색
+
+- QnA 글쓰기
+  - 성명 (readonly -> 수정 불가능)
+  - 제목 쓰기
+  - 내용 쓰기
+
+ - QnA 목록 상세 페이지
+   - 제목
+   - 내용
+   - QnA 수정 및 삭제
+   - QnA 답변
 
 ## 시스템 구축
 ![Image](https://github.com/user-attachments/assets/9cbe67bb-8f24-40dc-8d38-ec5dfdcd0622)
@@ -81,6 +194,7 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 ### 공통 기능
 로그인 / 회원가입 / 아이디 및 비밀번호 찾기 / 댓글 작성 / QnA 작성
 
+## 회원 및 비회원 기능
 ### 메인화면
 비회원 및 회원 / 관리자(admin)
 ![Image](https://github.com/user-attachments/assets/34c64fb1-3019-49ef-83a1-17be37cb9445)
@@ -101,7 +215,7 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 ![Image](https://github.com/user-attachments/assets/7e38b418-0f6e-436f-83ee-d7fe55d4fec9)
 
 1. 작성란에 작성한 내용과 DataBase안에 저장된 내용이 동일하면 아이디 및 비밀번호를 알려준다.
-### 댓글 작성 
+### 리뷰에 대한 댓글 작성 
 ![Image](https://github.com/user-attachments/assets/78ecf864-2a2c-478c-83a1-b8a3dbc78a8e)
 1. 본인이 작성한 댓글만 삭제할 수 있다.
 ### QnA 작성
@@ -116,9 +230,9 @@ update~.jsp: 회원정보, 영화리뷰, 공지사항 정보 등 수정 페이�
 ### 영화리뷰 및 공지사항 추가, 수정, 삭제
 ![Image](https://github.com/user-attachments/assets/6ee5565b-ac22-4713-a2af-39fed8fdb55e)
 ![Image](https://github.com/user-attachments/assets/6a9daa44-d4f2-4903-b936-1484579edddc)
-
 1. 영화리뷰 및 공지사항 추가, 수정, 삭제는 관리자만 할 수 있다.
 2. 영화리뷰 코드는 중복될 수 없으며, 공지사항 번호는 중복될 수 있다.
+
 ### 회원 댓글 및 QnA 관리, QnA 답변
 ![Image](https://github.com/user-attachments/assets/52dbb524-5962-462d-939c-f13bffbbcf20)
 1. 관리자는 모든 댓글을 삭제할 수 있다.
