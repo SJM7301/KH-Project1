@@ -28,7 +28,7 @@
   </tr>
   <tr>
     <td>사용 언어</td>
-    <td>Java, JavaScript, JSP, HTML, CSS, JS</td>
+    <td>Java, JSP, HTML, CSS, JS</td>
   </tr>
   <tr>
     <td>FrameWork / Library</td>
